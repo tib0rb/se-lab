@@ -27,7 +27,7 @@ public class TorpedoStore {
       }
     }
   }
-
+//kivételt dob, ha nem legalább 1 torpedot akarunk indítani, vagy több torpedot akarunk indítani mint amennyi van
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
